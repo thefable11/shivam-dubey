@@ -5,6 +5,7 @@ import Work from './components/Work';
 import About from './components/About';
 import Contact from './components/Contact';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('about');
@@ -39,6 +40,7 @@ const App = () => {
           </AnimatePresence>
         </div>
       </main>
+      <Analytics />
     </div>
   );
 };
